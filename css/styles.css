@@ -414,7 +414,6 @@ body.light-theme {
 
 .home__scroll-name {
 	font-size: var(--normal-font-size);
-	transform: rotate(-90deg);
 	font-weight:bolder;
 }
 
