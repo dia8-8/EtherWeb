@@ -8,7 +8,8 @@
       {
         "ignore": [
           "scroll-behavior",
-          "backdrop-filter"
+          "backdrop-filter",
+          "scrollbar-width"
         ]
       }
     ],
@@ -26,5 +27,13 @@
         "list": "off"
       }
     ]
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_ff <= 106",
+    "not firefox <= 106",
+    "not safari <= 16.1",
+    "not samsung <= 18"
+  ]
 }

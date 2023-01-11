@@ -535,6 +535,11 @@ body.light-theme {
 	padding-top: 1rem;
 }
 
+.info__container {
+	row-gap: 2rem;
+	padding-top: 1rem;
+}
+
 .skills__content {
 	background-color: var(--container-color);
 	padding: 1.5rem;
@@ -1057,6 +1062,11 @@ body.light-theme {
 	.skills__container {
 		justify-content: center;
 	}
+
+	.info__container {
+		justify-content: center;
+	}
+
 	.services__title {
 		padding-top: 1rem;
 	}
@@ -1103,7 +1113,7 @@ body.light-theme {
 
 @media screen and (min-width: 767px) {
 	.work__container {
-		grid-template-columns: repeat(4, max-content);
+		grid-template-columns: repeat(2, max-content);
 	}
 
 	.contact__container {
@@ -1118,6 +1128,10 @@ body.light-theme {
 	.container {
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.work__container {
+		grid-template-columns: repeat(2, max-content);
 	}
 
 	.section {
@@ -1188,6 +1202,11 @@ body.light-theme {
 		column-gap: 3rem;
 	}
 
+	.info__container {
+		grid-template-columns: repeat(3, 350px);
+		column-gap: 3rem;
+	}
+
 	.services__container {
 		grid-template-columns: repeat(3, 192px);
 		column-gap: 3rem;
@@ -1230,4 +1249,89 @@ body.light-theme {
 		padding: 0.4rem;
 		border-radius: 0.5rem;
 	}
+}
+
+@media screen and (min-width: 1168px) {
+
+	.work__container {
+		grid-template-columns: repeat(3, max-content);
+	}
+}
+
+@media screen and (min-width: 1667px) {
+
+	.work__container {
+		grid-template-columns: repeat(4, max-content);
+	}
+}
+
+@media screen and (min-width: 2056px) {
+
+	.work__container {
+		grid-template-columns: repeat(5, max-content);
+	}
+}
+
+.faq-heading{
+    border-bottom: #777;
+    padding: 20px 60px;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: hsl(4,90%,63%);
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 60%; 
+   padding: auto;
+   
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: #ffffff27;
+
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 10px;
+    background-color: #ffffff27;
+	color: aliceblue;;
+    display: none;
+    overflow: hidden;
+}
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: aliceblue;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+.light-theme .faq-body {
+	color: aliceblue;
 }
